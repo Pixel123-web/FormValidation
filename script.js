@@ -15,11 +15,7 @@ form.addEventListener("submit", (e) => {
     messages.push("Username is required");
   }
 
-  if (
-    atPosition < 1 ||
-    dotPosition < atPosition + 2 ||
-    dotPosition + 2 > emailVal.length
-  ) {
+  if (atPosition < 1 || dotPosition + 2 > emailVal.length) {
     messages.push("Enter a valid email.");
   }
 
